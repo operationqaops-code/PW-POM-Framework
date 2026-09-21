@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { registrationPage } from '../Pages/registrationPage';
 import { homePage } from '../Pages/homePage';
 
-test("Register to the Page", async ({ page }) => {
+test("@sanity Register to the Page", async ({ page }) => {
 
     const myHomePage=new homePage(page);
     await myHomePage.gotoMyAccount();

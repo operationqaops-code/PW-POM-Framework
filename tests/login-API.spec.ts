@@ -3,7 +3,7 @@ import { searchPage } from '../Pages/searchPage';
 import { test, expect } from '../API/login-API';
 
 
-test("searh  Item", async ({ page, authenticatedContext }) => {
+test("@sanity searh  Item", async ({ page, authenticatedContext }) => {
 
     const state = await authenticatedContext.storageState();
     console.log(state);

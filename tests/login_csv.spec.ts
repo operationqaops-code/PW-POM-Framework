@@ -8,7 +8,7 @@ const testData = Dataprovider1.getTestDataFromCsv(csvPath);
 //Data Driven Testing
 
 for (const data of testData) {
-    test(`Data Driven Test: ${data.testName}`, async ({ page, homepage, loginpage }) => {
+    test(`@sanity Data Driven Test: ${data.testName}`, async ({ page, homepage, loginpage }) => {
         await homepage.gotoMyAccount();
         await homepage.gotoLoginPage();
 
