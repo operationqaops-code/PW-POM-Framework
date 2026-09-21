@@ -191,7 +191,7 @@ pipeline {
 
                     allure([
                         includeProperties: false,
-                        jdk: 'JDK-21',
+                        jdk: 'JDK-25',
                         properties: [],
                         reportBuildPolicy: 'ALWAYS',
                         results: [[path: 'allure-results']]
