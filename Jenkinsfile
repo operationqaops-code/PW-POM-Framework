@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         maven 'Maven-3.9'
-        jdk 'JDK-21'
+        jdk 'JDK-25'
     }
 
     // Runs automatically every day at 10:00 PM
