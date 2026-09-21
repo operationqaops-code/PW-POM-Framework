@@ -1,0 +1,646 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: practice.spec.ts >> Handle dropdowns menu
+- Location: tests\practice.spec.ts:336:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - region [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - img "logo" [ref=e7]
+        - link "Cookiebot by Usercentrics - opens in a new window" [ref=e8] [cursor=pointer]:
+          - /url: https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2
+      - tabpanel "Consent" [ref=e36]:
+        - generic [ref=e38]:
+          - heading "This website uses cookies" [level=2] [ref=e39]
+          - paragraph [ref=e41]:
+            - text: We use cookies to improve your browsing experience. By continuing to use this website, you agree to our use of cookies in accordance with our
+            - link "Privacy Policy" [ref=e42] [cursor=pointer]:
+              - /url: https://www.orangehrm.com/policies/orangehrm-privacy-policy
+            - text: .
+        - generic [ref=e43]:
+          - group "Consent Selection" [ref=e49]:
+            - generic [ref=e51]:
+              - generic [ref=e53]:
+                - checkbox "Necessary" [checked] [disabled]
+              - switch "Preferences" [ref=e56] [cursor=pointer]
+              - switch "Statistics" [ref=e59] [cursor=pointer]
+              - switch "Marketing" [ref=e62] [cursor=pointer]
+          - link "Show details" [ref=e64] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e68]:
+        - button "Allow all" [ref=e69] [cursor=pointer]
+        - button "Allow selection" [ref=e70] [cursor=pointer]
+        - button "Deny" [ref=e71] [cursor=pointer]
+      - button "Close banner" [ref=e72] [cursor=pointer]
+  - navigation [ref=e75]:
+    - generic [ref=e76]:
+      - link [ref=e77] [cursor=pointer]:
+        - /url: /
+        - img "OrangeHRM Logo" [ref=e78]
+      - generic [ref=e79]:
+        - list [ref=e80]:
+          - listitem
+          - listitem [ref=e81]:
+            - link "Solutions" [ref=e82] [cursor=pointer]:
+              - /url: /contact-sales#
+          - listitem [ref=e83]:
+            - link "Why OrangeHRM" [ref=e84] [cursor=pointer]:
+              - /url: /contact-sales#
+          - listitem [ref=e85]:
+            - link "Resources" [ref=e86] [cursor=pointer]:
+              - /url: /contact-sales#
+          - listitem [ref=e87]:
+            - link "Company" [ref=e88] [cursor=pointer]:
+              - /url: /contact-sales#
+          - listitem [ref=e89]:
+            - link "Pricing" [ref=e90] [cursor=pointer]:
+              - /url: /pricing
+        - text:            
+        - list [ref=e91]:
+          - listitem [ref=e92]:
+            - button "Language" [ref=e93] [cursor=pointer]:
+              - generic [ref=e94]: 
+              - generic [ref=e96]: Global
+              - generic [ref=e97]: 
+            - text:   
+          - listitem [ref=e98]:
+            - link [ref=e99] [cursor=pointer]:
+              - /url: /book-a-free-demo
+              - button "Book a Free Demo" [ref=e100]
+          - listitem [ref=e101]:
+            - link [ref=e102] [cursor=pointer]:
+              - /url: /contact-sales
+              - button "Contact Sales" [ref=e103]
+  - main [ref=e104]:
+    - generic [ref=e106]:
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - heading "Talk to Our Experts to Discover a Better Way to Manage Your Workforce!" [level=1] [ref=e111]
+          - img "form-image OHRM" [ref=e112]
+        - generic [ref=e114]:
+          - heading "Talk To An Expert" [level=3] [ref=e115]
+          - generic [ref=e116]:
+            - group [ref=e117]:
+              - textbox "Full Name" [ref=e120]:
+                - /placeholder: Full Name*
+                - text: Abdul
+              - textbox "Email" [ref=e123]:
+                - /placeholder: Work Email*
+                - text: abc123@gmail.com
+              - textbox "Phone Number" [ref=e126]:
+                - /placeholder: Phone Number*
+                - text: "746784385643"
+              - combobox "Country" [ref=e129]:
+                - option "Country"
+                - option "Afghanistan"
+                - option "Albania"
+                - option "Algeria"
+                - option "American Samoa"
+                - option "Andorra"
+                - option "Angola"
+                - option "Anguilla"
+                - option "Antigua and Barbuda"
+                - option "Argentina"
+                - option "Armenia"
+                - option "Aruba"
+                - option "Australia"
+                - option "Austria"
+                - option "Azerbaijan"
+                - option "Bahamas"
+                - option "Bahrain"
+                - option "Bangladesh"
+                - option "Barbados"
+                - option "Belarus"
+                - option "Belgium"
+                - option "Belize"
+                - option "Benin"
+                - option "Bermuda"
+                - option "Bhutan"
+                - option "Bolivia"
+                - option "Bosnia and Herzegowina"
+                - option "Botswana"
+                - option "Bouvet Island"
+                - option "Brazil"
+                - option "Brunei Darussalam"
+                - option "Bulgaria"
+                - option "Burkina Faso"
+                - option "Burundi"
+                - option "Cambodia"
+                - option "Cameroon"
+                - option "Canada"
+                - option "Cape Verde"
+                - option "Cayman Islands"
+                - option "Central African Republic"
+                - option "Chad"
+                - option "Chile"
+                - option "China"
+                - option "Christmas Island"
+                - option "Cocos (Keeling) Islands"
+                - option "Colombia"
+                - option "Comoros"
+                - option "Congo"
+                - option "Cook Islands"
+                - option "Costa Rica"
+                - option "Cote D'Ivoire"
+                - option "Croatia"
+                - option "Cuba"
+                - option "Cyprus"
+                - option "Czech Republic"
+                - option "Denmark"
+                - option "Djibouti"
+                - option "Dominica"
+                - option "Dominican Republic"
+                - option "East Timor"
+                - option "Ecuador"
+                - option "Egypt"
+                - option "El Salvador"
+                - option "Equatorial Guinea"
+                - option "Eritrea"
+                - option "Estonia"
+                - option "Ethiopia"
+                - option "Falkland Islands (Malvinas)"
+                - option "Faroe Islands"
+                - option "Fiji"
+                - option "Finland"
+                - option "France"
+                - option "French Guiana"
+                - option "French Polynesia"
+                - option "French Southern Territories"
+                - option "Gabon"
+                - option "Gambia"
+                - option "Georgia"
+                - option "Germany"
+                - option "Ghana"
+                - option "Gibraltar"
+                - option "Greece"
+                - option "Greenland"
+                - option "Grenada"
+                - option "Guadeloupe"
+                - option "Guam"
+                - option "Guatemala"
+                - option "Guinea"
+                - option "Guinea-bissau"
+                - option "Guyana"
+                - option "Haiti"
+                - option "Heard and Mc Donald Islands"
+                - option "Honduras"
+                - option "Hong Kong"
+                - option "Hungary"
+                - option "Iceland"
+                - option "India" [selected]
+                - option "Indonesia"
+                - option "Iran"
+                - option "Iraq"
+                - option "Ireland"
+                - option "Israel"
+                - option "Italy"
+                - option "Jamaica"
+                - option "Japan"
+                - option "Jordan"
+                - option "Kazakhstan"
+                - option "Kenya"
+                - option "Kiribati"
+                - option "North Korea"
+                - option "South Korea"
+                - option "Kuwait"
+                - option "Kyrgyzstan"
+                - option "Laos"
+                - option "Latvia"
+                - option "Lebanon"
+                - option "Lesotho"
+                - option "Liberia"
+                - option "Libya"
+                - option "Liechtenstein"
+                - option "Lithuania"
+                - option "Luxembourg"
+                - option "Macau"
+                - option "Macedonia"
+                - option "Madagascar"
+                - option "Malawi"
+                - option "Malaysia"
+                - option "Maldives"
+                - option "Mali"
+                - option "Malta"
+                - option "Marshall Islands"
+                - option "Martinique"
+                - option "Mauritania"
+                - option "Mauritius"
+                - option "Mayotte"
+                - option "Mexico"
+                - option "Moldova"
+                - option "Monaco"
+                - option "Montenegro"
+                - option "Mongolia"
+                - option "Morocco"
+                - option "Mozambique"
+                - option "Myanmar"
+                - option "Namibia"
+                - option "Nauru"
+                - option "Nepal"
+                - option "Netherlands"
+                - option "Netherlands Antilles"
+                - option "New Caledonia"
+                - option "New Zealand"
+                - option "Nicaragua"
+                - option "Niger"
+                - option "Nigeria"
+                - option "Niue"
+                - option "Norfolk Island"
+                - option "Northern Mariana Islands"
+                - option "Norway"
+                - option "Oman"
+                - option "Pakistan"
+                - option "Palau"
+                - option "Panama"
+                - option "Papua New Guinea"
+                - option "Paraguay"
+                - option "Peru"
+                - option "Philippines"
+                - option "Poland"
+                - option "Portugal"
+                - option "Puerto Rico"
+                - option "Qatar"
+                - option "Reunion"
+                - option "Romania"
+                - option "Russian Federation"
+                - option "Rwanda"
+                - option "St Kitts and Nevis"
+                - option "St Lucia"
+                - option "St Vincent and the Grenadines"
+                - option "Samoa"
+                - option "San Marino"
+                - option "Sao Tome and Principe"
+                - option "Saudi Arabia"
+                - option "Senegal"
+                - option "Serbia"
+                - option "Seychelles"
+                - option "Sierra Leone"
+                - option "Singapore"
+                - option "Slovakia"
+                - option "Slovenia"
+                - option "Solomon Islands"
+                - option "Somalia"
+                - option "South Africa"
+                - option "South Georgia"
+                - option "Spain"
+                - option "Sri Lanka"
+                - option "Sudan"
+                - option "Suriname"
+                - option "Swaziland"
+                - option "Sweden"
+                - option "Switzerland"
+                - option "Syrian Arab Republic"
+                - option "Taiwan"
+                - option "Tajikistan"
+                - option "Tanzania"
+                - option "Thailand"
+                - option "Togo"
+                - option "Tokelau"
+                - option "Tonga"
+                - option "Trinidad and Tobago"
+                - option "Tunisia"
+                - option "Turkey"
+                - option "Turkmenistan"
+                - option "Turks and Caicos Islands"
+                - option "Tuvalu"
+                - option "Uganda"
+                - option "Ukraine"
+                - option "United Arab Emirates"
+                - option "United Kingdom"
+                - option "United States"
+                - option "Uruguay"
+                - option "Uzbekistan"
+                - option "Vanuatu"
+                - option "Venezuela"
+                - option "Vietnam"
+                - option "Virgin Islands"
+                - option "Western Sahara"
+                - option "Yemen"
+                - option "Zambia"
+                - option "Zimbabwe"
+                - option "South Sandwich Islands"
+                - option "St Helena"
+                - option "St Pierre and Miquelon"
+                - option "Vatican City"
+                - option "Wallis and Futuna Islands"
+                - option "Zaire"
+              - textbox "Company Name" [ref=e132]: hope.com
+              - textbox "Job title" [ref=e135]:
+                - /placeholder: Job Title*
+                - text: Automation Engineer
+              - combobox "No Of Employees" [ref=e138]:
+                - option "Number of Employees"
+                - option "< 10"
+                - option "11 - 50" [selected]
+                - option "51 - 200"
+                - option "200 - 1,000"
+                - option "> 1,000"
+              - textbox "Your Message" [active] [ref=e141]:
+                - /placeholder: Your Message*
+                - text: Sales Pages
+              - iframe [ref=e147]:
+                - generic [ref=f3e2]:
+                  - generic [ref=f3e3]:
+                    - checkbox "I'm not a robot" [ref=f3e7]
+                    - generic [ref=f3e9]: I'm not a robot
+                  - generic [ref=f3e12]: reCAPTCHA
+            - button "Contact Sales" [ref=e149] [cursor=pointer]
+          - paragraph [ref=e150]:
+            - text: We respect your privacy. By submitting, you agree to your information being processed according to our
+            - link "Privacy Policy." [ref=e151] [cursor=pointer]:
+              - /url: https://www.orangehrm.com/policies/orangehrm-privacy-policy
+      - generic [ref=e153]:
+        - heading "Powering HR for businesses across 100+ countries" [level=5] [ref=e157]
+        - generic [ref=e162]:
+          - generic [ref=e164]:
+            - img "toluna logo" [ref=e169]
+            - img "CFI logo" [ref=e174]
+            - img "Colten Care Logo" [ref=e179]
+            - img "DyStar" [ref=e184]
+            - img "Hawkeye Logo" [ref=e189]
+            - img "Helen Hayes Logo" [ref=e194]
+            - img "Puma Logo" [ref=e199]
+            - img "rewe fat east" [ref=e204]
+            - img "Toyota Logo" [ref=e209]
+            - img "Rutgers University Emblem" [ref=e214]
+            - img "Sandals" [ref=e219]
+            - img "Food for the Hungry" [ref=e224]
+            - img "stanley black" [ref=e229]
+            - img "Projects Abroad" [ref=e234]
+            - img "Chelton" [ref=e239]
+            - img "GALfoundation" [ref=e244]
+            - img "TCL" [ref=e249]
+            - img "toluna logo" [ref=e254]
+            - img "CFI logo" [ref=e259]
+            - img "Colten Care Logo" [ref=e264]
+            - img "DyStar" [ref=e269]
+            - img "Hawkeye Logo" [ref=e274]
+            - img "Helen Hayes Logo" [ref=e279]
+            - img "Puma Logo" [ref=e284]
+            - img "rewe fat east" [ref=e289]
+            - img "Toyota Logo" [ref=e294]
+            - img "Rutgers University Emblem" [ref=e299]
+            - img "Sandals" [ref=e304]
+            - img "Food for the Hungry" [ref=e309]
+            - img "stanley black" [ref=e314]
+            - img "Projects Abroad" [ref=e319]
+            - img "Chelton" [ref=e324]
+            - img "GALfoundation" [ref=e329]
+            - img "TCL" [ref=e334]
+            - img "toluna logo" [ref=e339]
+          - generic [ref=e340]:
+            - button
+            - button
+            - button
+            - button
+      - generic [ref=e342]:
+        - heading "Find the perfect HR solution for your business" [level=2] [ref=e346]
+        - generic [ref=e349]:
+          - generic [ref=e352]:
+            - img "1" [ref=e354]
+            - paragraph [ref=e355]: Our experts will help create a tailored strategy to perfectly match your organization's unique requirements.
+          - generic [ref=e358]:
+            - img "2" [ref=e360]
+            - paragraph [ref=e361]: Discover how OrangeHRM saves you time, effort, and resources with our comprehensive modules.
+          - generic [ref=e364]:
+            - img "3" [ref=e366]
+            - paragraph [ref=e367]: Experience OrangeHRM through a customized, 1-on-1 demo that highlights key features and benefits.
+          - generic [ref=e370]:
+            - img "4" [ref=e372]
+            - paragraph [ref=e373]: Our sales team ensures the platform remains effective as your needs evolve, supporting your organization's growth.
+      - generic [ref=e374]:
+        - heading "Consolidate Your HR Processes into One Smart Platform" [level=2] [ref=e379]
+        - generic [ref=e384]:
+          - generic [ref=e386]:
+            - heading "People Management" [level=3] [ref=e388]
+            - paragraph [ref=e390]: The demands of HR, from managing daily challenges to overseeing extensive paperwork, can be significant. With a strong people management strategy backed by automating your HR processes, you can equip your team with the necessary resources to thrive.
+            - list [ref=e392]:
+              - listitem [ref=e393]: HR Administration
+              - separator [ref=e394]
+              - listitem [ref=e395]: Employee Management
+              - separator [ref=e396]
+              - listitem [ref=e397]: Reporting and Analytics
+              - separator [ref=e398]
+              - listitem [ref=e399]: Mobile App
+              - separator [ref=e400]
+          - button [ref=e402] [cursor=pointer]:
+            - img "HR Administration" [ref=e403]
+        - generic [ref=e408]:
+          - generic [ref=e410]:
+            - heading "Talent Management" [level=3] [ref=e412]
+            - paragraph [ref=e414]: A thriving company culture depends on a recruitment team that ensures every hire aligns with its values and vision. Beyond creating a positive candidate experience they require a robust applicant tracking system and the ability to offer an automated, world-class onboarding experience to ensure your new employees are ready before they even step through the door.
+            - list [ref=e416]:
+              - listitem [ref=e417]: Recruitment
+              - separator [ref=e418]
+              - listitem [ref=e419]: Onboarding
+              - separator [ref=e420]
+              - listitem [ref=e421]: Request Desk
+              - separator [ref=e422]
+          - button [ref=e424] [cursor=pointer]:
+            - img "Recruitment" [ref=e425]
+        - generic [ref=e430]:
+          - generic [ref=e432]:
+            - heading "Compensation" [level=3] [ref=e434]
+            - paragraph [ref=e436]: Eliminate the complexity of manually managing leave management, time and attendance tracking, and employee scheduling. With a comprehensive HRMS, you can automate these processes, reduce manual errors, and ensure that all your data flows effortlessly across your HR department. This lets you focus on strategic HR initiatives and building a more productive workplace, instead of getting bogged down by administrative tasks.
+            - list [ref=e438]:
+              - listitem [ref=e439]: Leave Management
+              - separator [ref=e440]
+              - listitem [ref=e441]: Time and Attendance
+              - separator [ref=e442]
+              - listitem [ref=e443]: Roster
+              - separator [ref=e444]
+          - button [ref=e446] [cursor=pointer]:
+            - img "Roster Dashboard" [ref=e447]
+        - generic [ref=e452]:
+          - generic [ref=e454]:
+            - heading "Culture" [level=3] [ref=e456]
+            - paragraph [ref=e458]: Your commitment to developing your people fosters a thriving company culture where employees feel valued and are more engaged. By actively managing performance, supporting career development, and providing effective training, you empower your team to grow, enabling you to recognize challenges and celebrate successes.
+            - list [ref=e460]:
+              - listitem [ref=e461]: Performance Management
+              - separator [ref=e462]
+              - listitem [ref=e463]: Career Development
+              - separator [ref=e464]
+              - listitem [ref=e465]: Training
+              - separator [ref=e466]
+              - listitem [ref=e467]: Surveys
+              - separator [ref=e468]
+              - listitem [ref=e469]: Employee Voice
+              - separator [ref=e470]
+          - button [ref=e472] [cursor=pointer]:
+            - img "Career Development" [ref=e473]
+      - generic [ref=e474]:
+        - generic [ref=e475]:
+          - generic [ref=e478]:
+            - heading "Frequently Asked Questions" [level=2] [ref=e479]
+            - paragraph [ref=e481]: Everything you need to know about OrangeHRM
+          - generic [ref=e485]:
+            - generic [ref=e486]:
+              - heading [level=2] [ref=e487]:
+                - button "Does OrangeHRM offer solutions for companies of all sizes?" [expanded] [ref=e488] [cursor=pointer]
+              - generic "Does OrangeHRM offer solutions for companies of all sizes?" [ref=e489]: Yes. OrangeHRM offers scalable solutions designed to adapt to your organizational growth, whether you are a small startup or a large enterprise. Our sales team will tailor the solution to your specific and evolving needs.
+            - heading [level=2] [ref=e492]:
+              - button "How can I get detailed information on pricing?" [ref=e493] [cursor=pointer]
+            - heading [level=2] [ref=e495]:
+              - button "What should I expect from a product demonstration?" [ref=e496] [cursor=pointer]
+            - heading [level=2] [ref=e498]:
+              - button "Does the OrangeHRM platform grow with my organization?" [ref=e499] [cursor=pointer]
+        - generic [ref=e501]:
+          - generic [ref=e502]:
+            - img "Team Member" [ref=e503]
+            - img "Team Member" [ref=e504]
+            - img "Team Member" [ref=e505]
+          - heading [level=4] [ref=e506]:
+            - strong [ref=e507]: Still have questions?
+          - paragraph [ref=e508]: Can’t find the answer you’re looking for? Talk to one of our product experts today!
+          - button "Contact Sales" [ref=e509] [cursor=pointer]
+  - contentinfo [ref=e510]:
+    - generic [ref=e514]:
+      - generic [ref=e517]:
+        - link [ref=e519] [cursor=pointer]:
+          - /url: /
+          - img "OrangeHRM Logo" [ref=e520]
+        - generic [ref=e522]:
+          - img "users-love-us" [ref=e525]
+          - img "CoreHR_HighPerformer_HighPerformer" [ref=e528]
+          - img "sourceforge-user-reviews" [ref=e531]
+          - link [ref=e535] [cursor=pointer]:
+            - /url: https://sourceforge.net/software/product/OrangeHRM/?pk_campaign=badge&pk_source=vendor
+            - img "OrangeHRM Advanced Reviews" [ref=e536]
+          - img "CoreHR_HighPerformer_HighPerformer" [ref=e539]
+          - img "users-love-us" [ref=e542]
+      - generic [ref=e544]:
+        - generic [ref=e546]:
+          - heading "Company" [level=5] [ref=e547]
+          - list [ref=e548]:
+            - listitem [ref=e549]:
+              - link "About Us" [ref=e550] [cursor=pointer]:
+                - /url: https://orangehrm.com/company/about-us
+            - listitem [ref=e551]:
+              - link "Become a Partner" [ref=e552] [cursor=pointer]:
+                - /url: https://orangehrm.com/why-orangehrm/partners/partner-programs
+            - listitem [ref=e553]:
+              - link "Contact Us" [ref=e554] [cursor=pointer]:
+                - /url: https://orangehrm.com/company/contact
+            - listitem [ref=e555]:
+              - link "Press Releases" [ref=e556] [cursor=pointer]:
+                - /url: https://orangehrm.com/company/press-releases
+            - listitem [ref=e557]:
+              - link "News Articles" [ref=e558] [cursor=pointer]:
+                - /url: https://orangehrm.com/company/news-articles
+            - listitem [ref=e559]:
+              - link "Careers" [ref=e560] [cursor=pointer]:
+                - /url: https://orangehrm.com/company/careers
+            - listitem [ref=e561]:
+              - link "Contact Sales" [ref=e562] [cursor=pointer]:
+                - /url: https://orangehrm.com/contact-sales
+            - listitem [ref=e563]:
+              - link "Our Offices" [ref=e564] [cursor=pointer]:
+                - /url: https://orangehrm.com/company/about-us
+            - listitem [ref=e565]:
+              - link "Help Portal" [ref=e566] [cursor=pointer]:
+                - /url: https://help.orangehrm.com
+            - listitem [ref=e567]:
+              - link "AI Help Desk" [ref=e568] [cursor=pointer]:
+                - /url: https://aihelpdesk.orangehrm.com/
+            - listitem [ref=e569]:
+              - link "CS & Support" [ref=e570] [cursor=pointer]:
+                - /url: https://help.orangehrm.com/hc/en-us/articles/54232712645913
+        - generic [ref=e572]:
+          - heading "Resources" [level=5] [ref=e573]
+          - list [ref=e574]:
+            - listitem [ref=e575]:
+              - link "E-Books" [ref=e576] [cursor=pointer]:
+                - /url: https://orangehrm.com/resources/e-books
+            - listitem [ref=e577]:
+              - link "Blog" [ref=e578] [cursor=pointer]:
+                - /url: https://orangehrm.com/resources/blog
+            - listitem [ref=e579]:
+              - link "HR Dictionary" [ref=e580] [cursor=pointer]:
+                - /url: https://orangehrm.com/resources/hr-dictionary
+            - listitem [ref=e581]:
+              - link "Advanced Overview" [ref=e582] [cursor=pointer]:
+                - /url: https://orangehrm.com/assets/Documents/pdf/Product-Overview.pdf
+            - listitem [ref=e583]:
+              - link "Data Security Promise" [ref=e584] [cursor=pointer]:
+                - /url: https://orangehrm.com/resources/other-resources/data-security-promise
+            - listitem [ref=e585]:
+              - link "OrangeHRM AI Principles" [ref=e586] [cursor=pointer]:
+                - /url: https://orangehrm.com/ai-principles
+            - listitem [ref=e587]:
+              - link "Product Updates" [ref=e588] [cursor=pointer]:
+                - /url: https://orangehrm.com/product-updates
+        - generic [ref=e590]:
+          - heading "Policies" [level=5] [ref=e591]
+          - list [ref=e592]:
+            - listitem [ref=e593]:
+              - link "Privacy Policy" [ref=e594] [cursor=pointer]:
+                - /url: https://orangehrm.com/policies/orangehrm-privacy-policy
+            - listitem [ref=e595]:
+              - link "Service Privacy Policy" [ref=e596] [cursor=pointer]:
+                - /url: https://orangehrm.com/policies/orangehrm-service-privacy-policy
+            - listitem [ref=e597]:
+              - link "General Public License" [ref=e598] [cursor=pointer]:
+                - /url: https://orangehrm.com/policies/gnu-general-public-license
+            - listitem [ref=e599]:
+              - link "Commercial License" [ref=e600] [cursor=pointer]:
+                - /url: https://orangehrm.com/assets/Uploads/OrangeHRM-Commercial-License.pdf
+            - listitem [ref=e601]:
+              - link "DPF Privacy Policy" [ref=e602] [cursor=pointer]:
+                - /url: https://orangehrm.com/assets/Documents/DPF-Privacy-Policy.pdf
+            - listitem [ref=e603]:
+              - link "Modern Day Slavery Statement" [ref=e604] [cursor=pointer]:
+                - /url: https://orangehrm.com/assets/Documents/policies/orangehrm-modern-slavery-statement.pdf?_gl=1*sh1nzz*_gcl_au*MjkzNzAzODc0LjE3NDY1MDk2NDIuMTM0NTAzNDkwMi4xNzUwMjI4ODE5LjE3NTAyMjg4NDM.
+            - listitem [ref=e605]:
+              - link "Cookie Declaration" [ref=e606] [cursor=pointer]:
+                - /url: https://orangehrm.com/policies/cookie-declaration
+        - generic [ref=e608]:
+          - heading "Alternatives" [level=5] [ref=e609]
+          - list [ref=e610]:
+            - listitem [ref=e611]:
+              - link "Freshteam Alternative" [ref=e612] [cursor=pointer]:
+                - /url: https://orangehrm.com/freshteam-alternative
+    - generic [ref=e615]:
+      - paragraph [ref=e619]: OrangeHRM Inc. © 2026 All Rights Reserved.
+      - generic [ref=e620]:
+        - list [ref=e622]:
+          - listitem [ref=e623]:
+            - link [ref=e624] [cursor=pointer]:
+              - /url: https://www.facebook.com/OrangeHRM
+              - img "facebook" [ref=e626]
+          - listitem [ref=e627]:
+            - link [ref=e628] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/orangehrm/mycompany/
+              - img "linkedin" [ref=e630]
+          - listitem [ref=e631]:
+            - link [ref=e632] [cursor=pointer]:
+              - /url: https://x.com/orangehrm
+              - img "youtube" [ref=e634]
+          - listitem [ref=e635]:
+            - link [ref=e636] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/orangehrm
+              - img "linkedin" [ref=e638]
+          - listitem [ref=e639]:
+            - link [ref=e640] [cursor=pointer]:
+              - /url: https://www.instagram.com/orangehrm_?igsi=MWpvYmtpMDN2cGJsbQ%3D%3D
+              - img "linkedin" [ref=e642]
+        - link "Site Map" [ref=e644] [cursor=pointer]:
+          - /url: /site-map
+  - iframe [ref=e645]:
+    
+```

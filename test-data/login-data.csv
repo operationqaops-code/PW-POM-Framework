@@ -1,0 +1,8 @@
+testName,email,password,expected
+Invalid1,awalom.official1@gmail.com,Abdul@122,failure
+Invalid2,awalom.official2@gmail.com,Abdul@133,failure
+Invalid3,awalom.official3@gmail.com,Abdul@144,failure
+Invalid4,xyz4@gmail.com,xyz@122,failure
+Valid1,awalom.official@gmail.com,Abdul@123,success
+Valid2,Melanie29@yahoo.com,owiAaKRhYlG9,success    
+

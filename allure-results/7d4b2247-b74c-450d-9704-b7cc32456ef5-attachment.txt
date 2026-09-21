@@ -1,0 +1,36 @@
+{
+  cookies: [
+    {
+      name: 'OCSESSID',
+      value: 'b6cdf04468d02f9ff494cd1661',
+      domain: 'tutorialsninja.com',
+      path: '/',
+      expires: -1,
+      httpOnly: false,
+      secure: false,
+      sameSite: 'Lax'
+    },
+    {
+      name: 'language',
+      value: 'en-gb',
+      domain: '.tutorialsninja.com',
+      path: '/',
+      expires: 1791528507.619,
+      httpOnly: false,
+      secure: false,
+      sameSite: 'Lax'
+    },
+    {
+      name: 'currency',
+      value: 'USD',
+      domain: '.tutorialsninja.com',
+      path: '/',
+      expires: 1791528507.619,
+      httpOnly: false,
+      secure: false,
+      sameSite: 'Lax'
+    }
+  ],
+  origins: []
+}
+MacBook is visible
