@@ -6,7 +6,7 @@ import { test, expect } from '../API/login-API';
 test("@sanity searh  Item", async ({ page, authenticatedContext }) => {
 
     const state = await authenticatedContext.storageState();
-    console.log(state);
+    //console.log(state);
     await page.context().addCookies(state.cookies);
     await page.goto('https://tutorialsninja.com/demo/index.php?route=account/account');
     const searchpage = new searchPage(page);
@@ -17,12 +17,5 @@ test("@sanity searh  Item", async ({ page, authenticatedContext }) => {
     await searchpage.checkoutProduct();
     const checkoutSuccess = await searchpage.isCheckoutSuccess();
     expect(checkoutSuccess).toContain("Shopping Cart");
-
-
-    await page.waitForTimeout(5000);
-    await page.pause();
-
-
-
 
 });

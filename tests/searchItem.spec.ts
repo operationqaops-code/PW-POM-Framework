@@ -7,12 +7,12 @@ const credentials = JSON.parse(
 );
 
 
-test("searh  Item", async ({ page,homepage, loginpage }) => {
+test("@sanity searh  Item", async ({ page,homepage, loginpage }) => {
     await homepage.gotoMyAccount();
     await homepage.gotoLoginPage();
 
     await loginpage.loginToPage(credentials.email, credentials.password);
-    await page.waitForTimeout(5000);
+   // await page.waitForTimeout(5000);
 
     const searchpage = new searchPage(page);
     await searchpage.searchProduct();
@@ -24,8 +24,8 @@ test("searh  Item", async ({ page,homepage, loginpage }) => {
     expect(checkoutSuccess).toContain("Shopping Cart");
 
 
-    await page.waitForTimeout(5000);
-    await page.pause();
+    /* await page.waitForTimeout(5000);
+    await page.pause(); */
 
 
 

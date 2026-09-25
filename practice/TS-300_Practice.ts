@@ -389,7 +389,7 @@ console.log(result); */
 
 //input "I Love JavaScript" -->Output JavaScript Love I
 
-let str="I Love JavaScript";
+/* let str="I Love JavaScript";
 let words=str.split(" ");
 let result="";
 
@@ -398,3 +398,46 @@ for(let i=words.length-1;i>=0;i--){
 }
 
 console.log(result);
+
+https://www.cakehut.in/ */
+
+//find out maximum numbers from a array
+
+/* let arr=[10,2,34,56,6,56,57];
+
+let max=arr[0];
+
+for(let i=0;i<arr.length;i++){
+    if(arr[i]>max){
+        max=arr[i];
+    }
+}
+
+console.log(max); */
+
+//find out the second largest number from an array
+
+/* let arr=[29,10,23,5,6,67];
+let max=arr[0];
+let secondLargest=arr[0];
+
+for(let i=0;i<arr.length;i++){
+    if(arr[i]>max){
+        secondLargest=max;
+        max=arr[i];
+    }
+}
+
+console.log(secondLargest);
+console.log(max); */
+
+//hello world-->olleh dlrod
+
+/* let str="hello world";
+let strSplit=str.split("");
+let rev="";
+for(let i=strSplit.length-1;i>=0;i--){
+    rev+=strSplit[i]+"";
+}
+
+console.log(rev); */

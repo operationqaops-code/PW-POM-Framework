@@ -19,8 +19,8 @@ test("login Validation @priority @master", async ({ page }) => {
     const lpage = new loginPage(page);
     //await lpage.loginToPage(credentials.email,credentials.password);
     await lpage.loginToPage(process.env.APPUSERNAME!,process.env.PASSWORD!);
-    await page.waitForTimeout(10000);
-    await page.pause();
+    //await page.waitForTimeout(10000);
+    //await page.pause();
     const successMessage = await lpage.loginSuccessMessage();
     expect.soft(successMessage).toBeTruthy();
 

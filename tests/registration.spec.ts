@@ -9,9 +9,8 @@ test("@sanity Register to the Page", async ({ page }) => {
     await myHomePage.gotoRegisterPage();
     const regPage = new registrationPage(page);
     await regPage.registerToBuyProduct();
-    await page.waitForTimeout(10000);
+    //await page.waitForTimeout(10000);
     const succMessage=await regPage.getSuccessMessage();
     expect(succMessage).toBe('Your Account Has Been Created!');
-    await page.pause();
 
 });
